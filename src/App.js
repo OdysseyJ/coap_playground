@@ -34,7 +34,7 @@ const ImageWrapper = styled.div`
 `
 
 const Image = styled.img`
-  height: 60vh;
+  height: 70vh;
   opacity: 0.8;
   max-width: 500px;
   cursor: move;
@@ -60,6 +60,7 @@ const Link = styled.a`
   display:flex;
   flex-direction: column;
   align-items:center;
+  z-index: ${(props) => props.zIndex};
 `
 
 const Buy = styled.img`
@@ -94,16 +95,16 @@ function App() {
           <div>
             <ImageWrapper>
               <Image src={process.env.PUBLIC_URL + "/coap_bag_a.jpg"} />
-              <Link href="https://tumblbug.com/coapbagaaa">
+              <Link href="https://tumblbug.com/coapbagaaa" zIndex="10">
               <Buy src={process.env.PUBLIC_URL + "/buy.png"}></Buy>
               <ImageDescription>COAP_bag_A</ImageDescription>
-            </Link>
+              </Link>
             </ImageWrapper>
           </div>
           <div>
             <ImageWrapper>
               <Image src={process.env.PUBLIC_URL + "/coap_bag_mini.jpeg"} />
-              <Link href="https://blog.naver.com/coapofficial/222087494194">
+              <Link href="https://blog.naver.com/coapofficial/222087494194" zIndex="10">
               <Buy src={process.env.PUBLIC_URL + "/buy.png"}></Buy>
               <ImageDescription>COAP_bag_MINI</ImageDescription>
               </Link>
@@ -112,7 +113,7 @@ function App() {
           <div>
             <ImageWrapper>
               <Image src={process.env.PUBLIC_URL + "/coap_bag_w.jpeg"} />
-              <Link href="https://www.wadiz.kr/web/wcomingsoon/rwd/102663">
+              <Link href="https://www.wadiz.kr/web/wcomingsoon/rwd/102663" zIndex="10">
               <Buy src={process.env.PUBLIC_URL + "/buy.png"}></Buy>
               <ImageDescription>COAP_bag_W</ImageDescription>
               </Link>
