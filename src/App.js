@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Header = styled.div`
-  height: 4rem;
+  height: 3rem;
   display: flex;
   align-items:center;
   font-weight: 300;
   font-size: 24px;
-  padding-left: 1.3rem;
+  padding-left: 1rem;
   color: black;
   background-color: transparent;
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
@@ -34,7 +34,7 @@ const ImageWrapper = styled.div`
 `
 
 const Image = styled.img`
-  height: 70vh;
+  height: 60vh;
   opacity: 0.8;
   max-width: 500px;
   cursor: move;
