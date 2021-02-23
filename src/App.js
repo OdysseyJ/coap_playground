@@ -87,6 +87,7 @@ function App() {
     slidesToShow: 3,
     slidesToScroll: 1
   };
+
   return (
     <Layout>
     <Header>{"COAP"}</Header>
